@@ -23,6 +23,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.idea/
 MANIFEST
 
 # PyInstaller
@@ -112,3 +113,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.zip
+version.txt
