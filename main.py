@@ -7,7 +7,8 @@ import sys
 import subprocess
 import os
 
-firmware_download_link = "https://sho-me.ru/downloads/obnovleniya/firmware/{0}-{1}-{2}/sho-me-combo-N1-signature-firmware.zip"
+#firmware_download_link = "https://sho-me.ru/downloads/obnovleniya/firmware/{0}-{1}-{2}/sho-me-combo-N1-signature-firmware.zip"
+firmware_download_link = "https://sho-me.ru/downloads/obnovleniya/firmware/{0}-{1}-{2}/sho-me-combo-N1-signature-firmware-sw.zip"
 
 # read version from file
 try:
@@ -81,4 +82,6 @@ try:
                             title='Обновление SHO-ME Combo №1 Signature')
 except urllib.error.HTTPError:
     print('No FW found :(')
+    messagebox.showinfo(message="Не удалось скачать прошивку!", icon='error',
+                        title='Ошибка!')
     pass
